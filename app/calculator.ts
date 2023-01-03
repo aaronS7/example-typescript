@@ -12,6 +12,7 @@ export function multiply(x: number, y: number): number {
 
 export function divide(x: number, y: number): number | string {
   if (y === 0) {
+    console.log(`${process.env.SECRET} test`);
     return 'Cannot divide by 0'
   }
   return x * 1.0 / y
